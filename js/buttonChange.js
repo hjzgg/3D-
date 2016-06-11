@@ -17,9 +17,13 @@ $(function() {
 			} ),
 			
 			init = function() {
-
+				//初始化前进和后退按钮的点击事件
 				initEvents();
-				
+
+				//图片自动播放
+				setInterval(function(){
+					slicebox.next();
+				}, 3000);
 			},
 			initEvents = function() {
 
